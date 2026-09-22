@@ -1,4 +1,5 @@
-<?php require_once '../includes/functions.php'; ?>
+<?php require_once '../includes/functions.php';
+require_once '../login/verifica_user.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

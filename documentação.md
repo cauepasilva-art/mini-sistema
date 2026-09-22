@@ -16,3 +16,10 @@
 
 5. Atulizar aluno:
 - Atualiza um cadatro a partir de um ID.
+
+### Login
+RF:
+1. cadastro de usuario.
+2. Pagina de login
+3. Pagina de logout
+4. Fazer verificação de usuario logado
