@@ -23,7 +23,7 @@ session_start();
     <?php 
     if($_SERVER['REQUEST_METHOD'] == "POST"){
         $usuario = consulta_user($conexao, $_POST['email']);
-        if($usuario && $_POST['email'] == $usuario['email'] && $_POST['senha'] == $usuario['senha']){
+        if($_POST['email'] == $usuario['email'] && $_POST['senha'] == $usuario['senha']){
             $_SESSION['id'] = $usuario['id'];
             echo"Login OK, Redirecionando para a página inicial";
             sleep(3);
