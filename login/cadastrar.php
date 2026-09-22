@@ -1,13 +1,6 @@
-<!-- ### Login.
-RF:
-1. Cadastrar usuário.
-2. Página de login.
-3. Página de logout.
-4.|Verificar usuário logado. -->
-
 <?php
-require_once '../includes/functions.php';
-require_once '../login/verifica_user.php';
+require_once __DIR__. '/../includes/functions.php';
+require_once __DIR__. '/verifica_user.php';
 ?>
 
 <!DOCTYPE html>
@@ -15,9 +8,11 @@ require_once '../login/verifica_user.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
     <title>Login</title>
 </head>
 <body>
+    <?php include '../includes/header.php' ?>
     <main>
         <h1>Cadastre-se por aqui</h1>
         <form action="" method="POST">
@@ -31,6 +26,7 @@ require_once '../login/verifica_user.php';
     if($_SERVER['REQUEST_METHOD'] == "POST"){
         cadastrar_user($conexao, $_POST['email'], $_POST['senha']);
     }
+    include '../includes/footer.php';
     ?>
     </main>
 </body>

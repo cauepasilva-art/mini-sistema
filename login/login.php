@@ -1,5 +1,5 @@
 <?php
-require_once '../includes/functions.php';
+require_once __DIR__. '/../includes/functions.php';
 session_start();
 ?>
 
@@ -8,9 +8,11 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
     <title>Login</title>
 </head>
 <body>
+    <?php include '../includes/header.php' ?>
     <main>
         <h1>Faça seu login</h1>
         <form action="" method="POST">
@@ -33,6 +35,7 @@ session_start();
             echo"Usuário ou senha inválidos";
         }
     }
+    include '../includes/footer.php';
     ?>
     </main>
 </body>

@@ -7,5 +7,8 @@
         <a href="../app/select.php">Relatorio</a>
         <a href="../app/select_where.php">Aluno</a>
         <a href="../app/update.php">Atualizar</a>
+        <a href="../login/cadastrar.php">Cadastre-se</a>
+        <a href="../login/login.php">Entrar</a>
+        <a href="../login/logout.php">Sair</a>
     </nav>
 </header>

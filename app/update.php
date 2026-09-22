@@ -26,8 +26,8 @@ require_once '../login/verifica_user.php';
         <label for="sim">SIM</label>
         <input type = "radio" name="ativo" id="nao" value="false">
         <label for="nao">NAO</label>
-        <input type = "reset" value="limpart">
-        <input type = "submit" value="cadastrar">
+        <input type = "reset" value="limpar">
+        <input type = "submit" value="atualizar">
     
     <?php if($_SERVER['REQUEST_METHOD'] == "POST"){
     atualizar($conexao, $_POST['id'], $_POST['nome'], $_POST['turma'], $_POST['nasc'], $_POST['ativo']);

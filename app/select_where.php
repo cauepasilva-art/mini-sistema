@@ -1,5 +1,5 @@
-<?php require_once '../includes/functions.php';
-require_once '../login/verifica_user.php'; ?>
+<?php require_once __DIR__. '../includes/functions.php';
+require_once __DIR__. '/../login/verifica_user.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
