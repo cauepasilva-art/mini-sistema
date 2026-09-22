@@ -1,14 +1,14 @@
 <header>
     <h1>Eu sou o HEADER</h1>
     <nav>
-        <a href="../index.php">Inicio</a>
-        <a href="../app/create.php">Cadastrar</a>
-        <a href="../app/delete.php">Excluir</a>
-        <a href="../app/select.php">Relatorio</a>
-        <a href="../app/select_where.php">Aluno</a>
-        <a href="../app/update.php">Atualizar</a>
-        <a href="../login/cadastrar.php">Cadastre-se</a>
-        <a href="../login/login.php">Entrar</a>
-        <a href="../login/logout.php">Sair</a>
+        <a href="/mini_sistema/index.php">Inicio</a>
+        <a href="/mini_sistema/app/create.php">Cadastrar</a>
+        <a href="/mini_sistema/app/delete.php">Excluir</a>
+        <a href="/mini_sistema/app/select.php">Relatorio</a>
+        <a href="/mini_sistema/app/select_where.php">Aluno</a>
+        <a href="/mini_sistema/app/update.php">Atualizar</a>
+        <a href="/mini_sistema/login/cadastrar.php">Cadastre-se</a>
+        <a href="/mini_sistema/login/login.php">Entrar</a>
+        <a href="/mini_sistema/login/logout.php">Sair</a>
     </nav>
 </header>

@@ -1,3 +1,4 @@
+
 <?php include __DIR__. '/../includes/header.php' ?>
 <?php 
 //verifica sessão e/ou cria uma nova
