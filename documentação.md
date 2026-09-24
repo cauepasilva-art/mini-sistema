@@ -189,3 +189,54 @@ Insere um usuário na tabela `usuarios`.
 ### consulta_user()
 Busca um usuário pelo email para autenticação.
 
+# 4. Banco
+
+# Banco do Projeto
+
+## Estrutura do banco
+
+O sistema usa duas tabelas principais:
+
+### Tabela de alunos
+
+```sql
+CREATE TABLE alunos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100),
+    nasc DATE,
+    turma VARCHAR(50),
+    ativo BOOLEAN
+);
+```
+
+### Tabela de usuários
+
+```sql
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(100),
+    senha VARCHAR(100)
+);
+```
+
+## Função do banco no sistema
+
+O banco é usado para guardar as informações do sistema.
+
+- A tabela `alunos` guarda os dados dos alunos cadastrados
+- A tabela `usuarios` guarda os dados para fazer login
+
+## Como o sistema usa o banco
+
+- Quando o usuário cadastra um aluno, os dados vão para a tabela `alunos`
+- Quando ele consulta um aluno, o PHP busca no banco
+- Quando ele atualiza, o sistema muda os dados no banco
+- Quando ele exclui, o sistema remove o registro do banco
+- Quando faz login, o sistema compara email e senha com a tabela `usuarios`
+
+## Conexão com o banco
+
+O arquivo de conexão está em `database/connect.php` e é usado por todas as páginas que precisam acessar o banco.
+
+Esse banco é o responsável por armazenar tudo que o sistema usa.
+
